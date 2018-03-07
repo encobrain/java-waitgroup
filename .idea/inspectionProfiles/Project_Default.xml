@@ -1,0 +1,29 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlDeprecatedTag" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="HtmlFormInputWithoutLabel" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="JSLowercasedConstructorCall" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="JSUnresolvedFunction" enabled="false" level="INFO" enabled_by_default="false" />
+    <inspection_tool class="JSUnresolvedVariable" enabled="false" level="INFO" enabled_by_default="false" />
+    <inspection_tool class="PhpDynamicAsStaticMethodCallInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PhpUndefinedFieldInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PhpUnusedLocalVariableInspection" enabled="true" level="INFO" enabled_by_default="true" />
+    <inspection_tool class="RequiredAttributes" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myAdditionalRequiredHtmlAttributes" value="cols,action,alt" />
+    </inspection_tool>
+    <inspection_tool class="ReuseOfLocalVariableJS" enabled="true" level="INFO" enabled_by_default="true" />
+    <inspection_tool class="SpellCheckingInspection" enabled="true" level="TYPO" enabled_by_default="true">
+      <option name="processCode" value="false" />
+      <option name="processLiterals" value="false" />
+      <option name="processComments" value="false" />
+    </inspection_tool>
+    <inspection_tool class="UnnecessaryLocalVariableJS" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="m_ignoreImmediatelyReturnedVariables" value="false" />
+      <option name="m_ignoreAnnotatedVariables" value="false" />
+    </inspection_tool>
+    <inspection_tool class="UnterminatedStatementJS" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoreSemicolonAtEndOfBlock" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
