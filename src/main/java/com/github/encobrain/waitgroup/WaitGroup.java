@@ -16,7 +16,7 @@ public class WaitGroup {
     synchronized public void add (int delta) throws NegativeCounterException {
         counter += delta;
 
-        if (counter < 0) throw new NegativeCounterException(delta);
+        if (counter < 0) throw new NegativeCounterException(counter);
 
         if (counter == 0) notifyAll();
     }
