@@ -1,7 +1,5 @@
 package com.github.encobrain.waitgroup;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 public class WaitGroup {
 
     public static class NegativeCounterException extends Exception {
@@ -13,14 +11,14 @@ public class WaitGroup {
         }
     }
 
-    protected AtomicInteger counter = new AtomicInteger(0);
+    protected int counter = 0;
 
     synchronized public void add (int delta) throws NegativeCounterException {
-        delta = counter.addAndGet(delta);
+        counter += delta;
 
-        if (delta < 0) throw new NegativeCounterException(delta);
+        if (counter < 0) throw new NegativeCounterException(delta);
 
-        if (delta == 0) notifyAll();
+        if (counter == 0) notifyAll();
     }
 
     public void done () throws NegativeCounterException {
@@ -28,6 +26,6 @@ public class WaitGroup {
     }
 
     synchronized public void await () throws InterruptedException {
-        while (counter.get()>0) wait();
+        while (counter>0) wait();
     }
 }
