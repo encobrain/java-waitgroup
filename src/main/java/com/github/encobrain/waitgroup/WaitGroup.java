@@ -2,7 +2,7 @@ package com.github.encobrain.waitgroup;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class WaitGroup extends Object {
+public class WaitGroup {
 
     public static class NegativeCounterException extends Exception {
         public final int counter;
